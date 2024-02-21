@@ -16,7 +16,7 @@ const dezena = Math.trunc((numero % 100) / 10)
 
 const unidade = numero % 10
 
-const diferença = numero - (`${unidade}${dezena}${centena}`)
+const diferença = numero - ((unidade * 100) + (dezena * 10) + (centena))
 
 // Saida 
 
